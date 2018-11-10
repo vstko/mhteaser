@@ -1,0 +1,668 @@
+.wrap * {
+	font-size: 13px;
+}
+
+label {
+	font-size: 14px;
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none !important;
+}
+
+.mwd-mailchimp {
+	color: #23282d;
+	background: transparent !important;
+}
+
+.mwd-main {
+	padding-left: 0 !important;	
+}
+
+.mwd-logo {
+	background: url(../images/icons.png) no-repeat 78% 92%;
+	border: none;
+	height: 60px;
+	width: 82px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mwd-load-mailchimp-status {
+    background: url("../images/icons.png") no-repeat 90% 25%;
+    width: 20px;
+    height: 30px;
+}
+
+.mwd-themes-tabs {
+	background: #fff;
+	padding: 0 !important;
+}
+
+.mwd-mailchimp-tabs a {
+	text-decoration: underline !important;
+}
+
+.skip-step {
+	font-size: 12px;
+}
+
+.mwd-themes-form > div{
+    background: #fff;
+}
+
+.mwd-button.mwd-renew-api,
+.mwd-button.mwd-change-api,
+.mwd-button.mwd-renew-list,
+.mwd-button.mwd-manage-lists,
+.mwd-button.mwd-clear-api-cache,
+.mwd-button.mwd-delete-subscriber,
+.mwd-button.mwd-load-mailchimp,
+.mwd-button.mwd-load-mailchimp-list,
+.mwd-button.mwd-skip,
+.mwd-button.mwd-create-form{
+	background-color: #4EC0D9;
+	border: 1px solid transparent;
+	font-size: 14px;
+}
+
+.mwd-button.mwd-delete-subscriber {
+    margin: 0 -1px -1px 0;
+}
+	
+.mwd-button.mwd-delete-subscriber span,
+.mwd-button.mwd-clear-api-cache span {
+	background: url("../images/icons.png")  no-repeat 73.5% 0%;
+}
+
+.mwd-button.mwd-renew-api span,
+.mwd-button.mwd-change-api span{
+	background: url("../images/icons.png")  no-repeat 40% 12%;
+}
+
+.mwd-button.mwd-renew-list span{
+	background: url("../images/icons.png")  no-repeat 47% 12%;
+}
+
+.mwd-button.export-button span{
+	background: url("../images/icons.png")  no-repeat 66.5% 0%;
+}
+
+.mwd-button.mwd-manage-lists span{
+	background: url("../images/icons.png")  no-repeat 53.5% 12%
+}
+
+.mwd-button.merge-variables span {
+	background: url("../images/icons.png")  no-repeat 60% 12%;
+}
+
+.mwd-button.merge-variables.active-button span,
+.mwd-button.merge-variables span:hover {
+	background: url("../images/icons.png")  no-repeat 80% 12%;
+}
+
+.mwd-button.additional-lists span {
+	background: url("../images/icons.png")  no-repeat 67% 12%;
+}
+
+.mwd-button.additional-lists.active-button span,
+.mwd-button.additional-lists span:hover {
+	background: url("../images/icons.png")  no-repeat 87% 12%;
+}
+
+.mwd-button.delete-subscriber span {
+	background: url("../images/icons.png")  no-repeat 73% 12%;
+}
+
+.mwd-button.delete-subscriber.active-button span,
+.mwd-button.delete-subscriber span:hover {
+	background: url("../images/icons.png")  no-repeat 93% 12%;
+}
+
+.mwd-mailchimp-api input[type="text"]{
+	width: 100%;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
+.no-margin{
+	margin: 0 !important; 
+}
+
+.mwd-mailchimp-quick-connect {
+	font-size: 14px;
+}
+
+.mwd-mailchimp-progress-bar.panel-heading {
+	padding: 0;
+}
+
+.mwd-mailchimp-loaded {
+    width: 6%;
+    display: inline-block;
+    background: #DDCC7F;
+    margin-right: 10px;
+    text-align: right !important;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+.mwd-mailchimp-tabs {
+	min-height: 200px;
+	background: #fff;
+	width: 92%;
+}
+
+.mwd-button.mwd-api-label{
+    background: #E6705C;
+    color: #fff;
+    font-size: 15px;
+	width: 25%; 
+	float: left;
+}
+
+.mwd-mailchimp-connect-tab input,
+.mwd-mailchimp-list-tab select{
+	width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    height: 40px;
+    vertical-align: top;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none !important;
+}
+
+.mwd-table {
+	display: table; 
+	width: 100%;
+}
+
+.mwd-table-row {
+	display:table-row; 
+}
+
+.mwd-table-head-cell {
+	display:table-cell; 
+}
+
+.mwd-table-cell {
+	display:table-cell; 
+	padding: 4px;
+}
+
+.mwd-sidebar .panel,
+.mwd-sidebar .panel-heading {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.mwd-sidebar .panel-heading {
+	background: #E2E2E2;
+    font-size: 16px;
+}
+
+.mwd-sidebar .panel-body {
+	border: 1px solid #D6D6D6;
+	border-top: none;
+}
+
+.mwd-sidebar .panel-body > ul > li {
+	font-size: 15px;
+}
+
+.mwd-sidebar .panel-body .mwd-segment-conditions ul li {
+	font-size: 13px;
+}
+
+.mwd-sidebar th.sortable a, .mwd-sidebar th.sorted a {
+	padding: 0;	
+}
+
+.mwd-sidebar.mwd-interest-groups-info ul {
+	list-style-image: url("../images/list-blue.png");
+	margin-left: 15px;
+}
+
+.mwd-sidebar.mwd-segments-info .panel-body > ul {
+	list-style-image: url("../images/list-yellow.png");
+	margin-left: 15px;
+}
+
+.mwd-sidebar.mwd-segments-info .panel-body .mwd-segment-conditions ul {
+	list-style-image: url("../images/list-red.png");
+	margin-left: 15px;
+}
+
+.mwd-sidebar.mwd-segments-info ul li > span,
+.mwd-sidebar.mwd-interest-groups-info ul li > span {
+	vertical-align: top;
+    display: inline-block;
+}
+
+.mwd-arrow {
+	position: relative;
+}
+
+.mwd-arrow-top:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #fff;
+	border-width: 7px;
+	margin-left: -7px;
+}
+
+.mwd-arrow-left:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 7px;
+	margin-top: -7px;
+}
+
+.mwd-arrow-top.left:after {
+	left: 13% !important;
+}
+
+.mwd-mailchimp-tabs .left {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.mwd-mailchimp-tabs table td{
+	padding: 0 !important;
+}
+
+.mwd-arrow-right:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 7px;
+	margin-top: -7px;
+}
+
+.mwd-mailchimp-data {
+	border-collapse: collapse;
+	background: #fff;
+	padding: 20px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+span.mwd-view {
+	background: url("../images/icons.png") no-repeat 96% 25%;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+}
+
+
+.mwd-list-table,
+.mwd-merge-vars-table {
+	width: 100%;
+	margin: 0;
+	border-collapse:collapse;
+}
+
+.mwd-list-table > tbody > tr:first-child{
+	background:#F1F1F1;
+}
+
+.mwd-list-table > tbody > tr:first-child a{
+	text-decoration:underline;
+	color:#4CA4BF !important;
+}
+
+.mwd-list-table > tbody > tr:first-child h3{
+	color:#4CA4BF !important;
+}
+
+.mwd-list-table td,
+.mwd-list-table th{
+	border: 1px solid #ECECEC;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+.mwd-list-table > tbody > tr:first-child td{
+	border: none !important;
+	cursor:poiinter;
+}
+
+.mwd-list-table td code{
+	background:none;
+	color:#000;
+}
+
+.mwd-sidebar {
+	background: #fff;
+	padding: 15px;
+}
+
+.mwd-account-info img{
+	width:25%;
+	border-radius:15px;
+}
+
+.profile-general {
+	width:65%;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 10px;
+}	
+
+.profile-general h2{
+	margin: 10px 0;
+}
+
+.profile-general p{
+	margin: 0;
+}
+
+.mwd-subscriber-details {
+	background: #fefefe;
+    min-height: 200px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}	
+
+.mwd-subscriber-header {
+	display: inline-block;
+    background-color: #fff;
+}
+
+.mwd-subscriber-header button span{
+	height: 46px !important;
+}
+
+.mwd-subscriber-content {
+	border: 1px solid #DADADA;
+	min-height: 150px;
+    margin-top: -3px;
+	margin-left: -1px;
+}
+
+.mwd-subscriber-content h2{
+	text-align: center;
+}
+
+.mwd-mailchimp label {
+    font-weight: normal;
+}
+
+.mwd-mailchimp .mwd-section-seperator {
+	border: 0 !important;
+	border-top: 1px solid #ddcc7f !important;
+	border-bottom: 1px solid #fafafa !important;
+}
+
+.mwd-mailchimp .mwd-profile-name {
+	color: #4FAEC4;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.mwd-key {
+	display: table-cell;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 0px;
+    font-weight: normal;
+    padding-right: 6px;
+    text-align: center;
+    color: #414141;
+    border: 1px solid #E1E1E1;
+	font-weight: bold;
+	font-size: 14px;
+	background: #fff;
+} 
+
+.mwd-value {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+   
+.mwd-key span{
+    width: 46px;
+    height: 42px;
+    display: inline-block;
+    background-size: contain;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 0px;
+    float: left;
+	margin-right: 6px;
+} 
+   
+.mwd-key.company span{
+	background: url("../images/icons.png")  no-repeat 0% 12.1%;
+}
+
+.mwd-key.industry span{
+	background: url("../images/icons.png")  no-repeat 7% 12.1%;
+}
+
+.mwd-key.member_since span{
+	background: url("../images/icons.png")  no-repeat 13.5% 12.1%;
+}  
+
+.mwd-key.plan_type span{
+	background: url("../images/icons.png")  no-repeat 20% 12.1%;
+} 
+
+.mwd-key.emails_left span{
+	background: url("../images/icons.png")  no-repeat 27% 12.1%;
+}
+ 
+.mwd-key.affiliate_link span{
+	background: url("../images/icons.png")  no-repeat 33.5% 12.1%;
+} 
+
+.mwd-key.merge-var-label{
+	height: initial;
+    padding: 2px 4px;
+    line-height: initial;
+}
+ 
+.mwd-value.merge-var-value{
+	background: #f1f1f1;
+    border: 1px solid #E1E1E1;
+    border-left: none;
+}
+
+.mwd-list-info .list-general > div,
+.mwd-row {
+	margin-top: 10px;
+    padding: 0;
+}
+
+.mwd-subscriber-content .mwd-no-data{
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.mwd-list-info .list-general .mwd-key,
+.mwd-submissions-general .mwd-key{
+	background: #E2E2E2;
+	border: none;
+	padding: 0 6px;
+}
+
+.mwd-list-info .list-general .mwd-key label{
+	margin: 0;
+	border: none;
+	padding: 0 6px;
+}
+
+.mwd-list-info .list-general .mwd-value{
+    border: 1px solid #E8E8E8;
+    border-left: none;
+}
+
+.mwd-value input[readonly] {
+	background: none;
+	border: none;
+	box-shadow: none;
+	width: 95% !important;
+}
+
+
+
+
+.mwd-button.add-button {
+    background-color: #4EC0D9;
+	border: 1px solid transparent;
+}
+
+.mwd-button.add-button span{
+	background: url("../images/icons.png")  no-repeat 0% 0%;
+}
+
+.mwd-button.add-new-button {
+    background-color: #4EC0D9;
+	border: 1px solid transparent;
+}
+
+.mwd-button.add-custom-button {
+	background-color: #E1E1E1;
+    border: 1px solid transparent;
+    color: #A1A1A1;
+}
+
+.mwd-button.add-new-button span{
+	background: url("../images/icons.png")  no-repeat 0% 0%;
+}
+
+.mwd-button.add-custom-button span{
+	background: url("../images/icons.png")  no-repeat 100% 12%;
+}
+
+.mwd-button.form-options-button span{
+	background:url("../images/icons.png") no-repeat 13.5% 0%;
+}
+
+.mwd-button.undo-button span{
+	background:url("../images/icons.png") no-repeat 27% 0%;
+}
+
+.mwd-button.redo-button span{
+	background:url("../images/icons.png") no-repeat 55% 0%;
+}
+
+.mwd-button.save-button span{
+	background:url("../images/icons.png") no-repeat 40% 0%;
+}
+
+.mwd-button.save-as-copy-button span{
+	background:url("../images/icons.png") no-repeat 47% 0%;
+}
+
+.field-save-button span,
+.mwd-button.apply-button span{
+	background:url("../images/icons.png") no-repeat 80% 0% !important;
+}
+
+.mwd-button.display-options-button span{
+	background:url("../images/icons.png") no-repeat 100% 0%;
+}
+
+.mwd-button.cancel-button span{
+	background:url("../images/icons.png") no-repeat 93.5% 0%;
+}
+
+.mwd-button.options-edit-button span {
+	background: url("../images/icons.png") no-repeat 20% 0%;
+}
+
+.mwd-button.preview-button span {
+	background: url("../images/icons.png") no-repeat 7% 0%;
+}
+
+.mwd-show-icon {
+    background: url("../images/icons.png") no-repeat 81.5% 23.5%;
+    width: 23px;
+    height: 18px;
+    display: inline-block;
+	outline: none;
+}
+
+a:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.mwd-hide-icon {
+	background: url("../images/icons.png") no-repeat 44% 87%;
+	width: 20px;
+}
+
+.mwd-logo-title {
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 100px;
+    margin-left: 10px;
+    line-height: 22px;
+}
+
+.mwd-h2-message{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.mwd-form-types label {
+	width: initial !important;
+}
+
+.mwd-form-types label > input{ 
+	visibility: hidden; 
+	position: absolute;
+}
+
+.mwd-form-types label > input + span{
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.mwd-form-types label > p{
+	padding: 5px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #46ACC3;
+	margin: 0;
+}
+
+.mwd-form-types label > input:checked + span{ 
+	/* border: 2px solid #E5705D; */
+}
+
+

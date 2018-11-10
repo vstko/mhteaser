@@ -1,0 +1,51 @@
+.mwd-admin-notice {
+	background: #fff;
+	border-top: 4px;
+	display: block;
+	min-height: 68px;
+	padding: 10px 40px 10px 125px;
+	position: relative;
+}
+.mwd-admin-notice a {
+	color: #10738B;
+}
+.mwd-notice-logo {
+	clear: both;
+	content: "";
+	display: block;
+	background: url(../images/icons.png) no-repeat -423px -322px;
+	width: 110px;
+	height: 81px;
+	position: absolute;
+	top: calc(-50% + 80px);
+	left: 5px;
+}
+.mwd-admin-notice > .dashicons {
+	color: #424242;
+	position: absolute;
+	right: 20px;
+	top: 40%;
+}
+.mwd-notice-title {
+	font-size: 24px;
+	margin: 0;
+}
+.mwd-notice-body {
+	font-weight: normal;
+	margin: 5px 0;
+}
+.mwd-notice-body:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+.mwd-notice-body li {
+	float: left;
+	margin-right: 20px;
+}
+.mwd-notice-body .dashicons {
+	font-size: 17px;
+}
+.mwd-blue {
+	color: #10738B;
+}

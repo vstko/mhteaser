@@ -1,0 +1,528 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-07-13 11:45+0400\n"
+"PO-Revision-Date: 2017-07-13 11:51+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_esc_attr_e;_esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/deactivate.php:39
+msgid "Temporary deactivation"
+msgstr ""
+
+#: includes/deactivate.php:43
+msgid "Using another plugin"
+msgstr ""
+
+#: includes/deactivate.php:47
+msgid "Plugin is difficult to use"
+msgstr ""
+
+#: includes/deactivate.php:51
+msgid "No longer need the plugin"
+msgstr ""
+
+#: includes/deactivate.php:55
+msgid "Technical problems/Poor quality"
+msgstr ""
+
+#: includes/deactivate.php:59
+msgid "Bad/No Support by developer"
+msgstr ""
+
+#: includes/deactivate.php:64
+msgid "Other"
+msgstr ""
+
+#: includes/deactivate.php:68
+msgid "Don't like to share my information"
+msgstr ""
+
+#: templates/display_addons.php:44
+msgid "Installed Add-Ons"
+msgstr ""
+
+#: templates/display_addons.php:44
+msgid ""
+"Below you can see all the add-ons that you have installed for the plugin. "
+"Please note that you need to have the paid version of the plugin for the add-"
+"ons to work."
+msgstr ""
+
+#: templates/display_addons.php:47
+msgid "Purchased Add-Ons"
+msgstr ""
+
+#: templates/display_addons.php:47
+msgid ""
+"These are the add-ons you’ve purchased. Install and activate the add-ons to "
+"start using them on your WordPress website."
+msgstr ""
+
+#: templates/display_addons.php:51
+msgid "Paid Add-Ons"
+msgstr ""
+
+#: templates/display_addons.php:51
+msgid ""
+"Below you can see all the add-ons available to purchase for the plugin. "
+"Click the “Buy Now” button to get and start using the add-on."
+msgstr ""
+
+#: templates/display_addons.php:73 templates/display_plugins.php:65
+#: templates/display_themes.php:53
+msgid "All"
+msgstr ""
+
+#: templates/display_addons.php:76 templates/display_plugins.php:68
+#: templates/display_themes.php:56
+msgid "Update available"
+msgstr ""
+
+#: templates/display_addons.php:79 templates/display_plugins.php:71
+#: templates/display_themes.php:59
+msgid "Active"
+msgstr ""
+
+#: templates/display_addons.php:82 templates/display_plugins.php:74
+#: templates/display_themes.php:62
+msgid "Inactive"
+msgstr ""
+
+#: templates/display_addons.php:132 templates/display_addons.php:135
+#: templates/display_plugins.php:80 templates/display_plugins.php:83
+#: templates/display_themes.php:68 templates/display_themes.php:71
+msgid "Popular"
+msgstr ""
+
+#: templates/display_addons.php:136 templates/display_plugins.php:84
+#: templates/display_themes.php:72
+msgid "Alphabetical"
+msgstr ""
+
+#: templates/display_addons.php:140 templates/display_plugins.php:88
+#: templates/display_themes.php:76
+msgid "Sort by"
+msgstr ""
+
+#: templates/display_addons.php:145 templates/display_plugins.php:93
+#: templates/display_themes.php:81
+msgid "Update Selected"
+msgstr ""
+
+#: templates/display_addons.php:149 templates/display_plugins.php:97
+#: templates/display_themes.php:85
+msgid "Select All"
+msgstr ""
+
+#: templates/display_addons.php:150 templates/display_plugins.php:98
+#: templates/display_themes.php:86
+msgid "Deselect All"
+msgstr ""
+
+#: templates/display_addons.php:218 templates/display_addons.php:350
+#: templates/display_addons.php:418 templates/display_plugins.php:158
+#: templates/display_plugins.php:320 templates/display_themes.php:139
+#: templates/display_themes.php:280
+msgid "More Details"
+msgstr ""
+
+#: templates/display_addons.php:224 templates/display_plugins.php:164
+#: templates/display_themes.php:147
+msgid "Product plan"
+msgstr ""
+
+#: templates/display_addons.php:228 templates/display_plugins.php:168
+#: templates/display_themes.php:151
+msgid "Expiration date"
+msgstr ""
+
+#: templates/display_addons.php:229 templates/display_plugins.php:169
+#: templates/display_themes.php:152
+msgid "Expired"
+msgstr ""
+
+#: templates/display_addons.php:233 templates/display_plugins.php:173
+#: templates/display_themes.php:156 wd.php:363
+msgid "Version"
+msgstr ""
+
+#: templates/display_addons.php:236 templates/display_plugins.php:177
+#: templates/display_themes.php:159
+msgid "View change log"
+msgstr ""
+
+#: templates/display_addons.php:245 templates/display_plugins.php:186
+#: templates/display_themes.php:168
+msgid "Manage"
+msgstr ""
+
+#: templates/display_addons.php:250 templates/display_plugins.php:191
+#: templates/display_themes.php:173
+msgid "Delete"
+msgstr ""
+
+#: templates/display_addons.php:260 templates/display_addons.php:264
+#: templates/display_addons.php:276 templates/display_plugins.php:211
+#: templates/display_plugins.php:217 templates/display_plugins.php:221
+#: templates/display_plugins.php:234 templates/display_themes.php:184
+#: templates/display_themes.php:190 templates/display_themes.php:194
+#: templates/display_themes.php:207
+msgid "Update"
+msgstr ""
+
+#: templates/display_addons.php:260 templates/display_plugins.php:217
+#: templates/display_themes.php:190
+msgid "You should renew product plan to get access to updates"
+msgstr ""
+
+#: templates/display_addons.php:264 templates/display_plugins.php:221
+#: templates/display_themes.php:194 wd.php:368
+msgid "Current logged-in user does not have a subscription for updates"
+msgstr ""
+
+#: templates/display_addons.php:281 templates/display_deactivation_popup.php:21
+#: templates/display_plugins.php:240
+msgid "Deactivate"
+msgstr ""
+
+#: templates/display_addons.php:284 templates/display_plugins.php:243
+#: templates/display_themes.php:213
+msgid "Activate"
+msgstr ""
+
+#: templates/display_addons.php:290 templates/display_plugins.php:249
+#: templates/display_themes.php:219
+msgid "Upgrade to Higher Plan"
+msgstr ""
+
+#: templates/display_addons.php:295 templates/display_plugins.php:254
+#: templates/display_themes.php:224
+msgid "Business"
+msgstr ""
+
+#: templates/display_addons.php:298 templates/display_plugins.php:257
+#: templates/display_themes.php:227
+msgid "Developer"
+msgstr ""
+
+#: templates/display_addons.php:306 templates/display_addons.php:366
+#: templates/display_plugins.php:283 templates/display_plugins.php:337
+#: templates/display_themes.php:254 templates/display_themes.php:297
+msgid "Renew Product Plan"
+msgstr ""
+
+#: templates/display_addons.php:314
+msgid "You don't have installed add-ons yet."
+msgstr ""
+
+#: templates/display_addons.php:314 templates/display_addons.php:387
+msgid "Check our paid add-ons here"
+msgstr ""
+
+#: templates/display_addons.php:357 templates/display_plugins.php:327
+#: templates/display_themes.php:288
+msgid "Installed"
+msgstr ""
+
+#: templates/display_addons.php:362 templates/display_addons.php:379
+#: templates/display_plugins.php:332 templates/display_plugins.php:350
+#: templates/display_themes.php:293 templates/display_themes.php:311
+msgid "Install"
+msgstr ""
+
+#: templates/display_addons.php:362 templates/display_plugins.php:332
+#: templates/display_themes.php:293
+msgid "You should renew product plan to get access to install"
+msgstr ""
+
+#: templates/display_addons.php:387
+msgid "You don't have any purchased add-ons to be installed."
+msgstr ""
+
+#: templates/display_addons.php:424
+msgid "Buy now"
+msgstr ""
+
+#: templates/display_addons.php:451
+msgid " addons require at least free version of the plugin installed"
+msgstr ""
+
+#: templates/display_addons.php:462 templates/display_addons.php:481
+#: templates/display_plugins.php:278 templates/display_themes.php:249
+msgid "Install Paid Version"
+msgstr ""
+
+#: templates/display_addons.php:466 templates/display_addons.php:488
+#: templates/display_plugins.php:387 templates/display_themes.php:343
+msgid "Install Free Version"
+msgstr ""
+
+#: templates/display_addons.php:470
+msgid " addons require paid version installed"
+msgstr ""
+
+#: templates/display_addons.php:485 templates/display_plugins.php:266
+#: templates/display_plugins.php:384 templates/display_themes.php:236
+#: templates/display_themes.php:340
+msgid "Get Paid Version"
+msgstr ""
+
+#: templates/display_deactivation_popup.php:4
+msgid "If you have a moment, please let us know why you are deactivating"
+msgstr ""
+
+#: templates/display_deactivation_popup.php:15
+msgid "Additional details"
+msgstr ""
+
+#: templates/display_deactivation_popup.php:20
+msgid "Cancel"
+msgstr ""
+
+#: templates/display_deactivation_popup.php:22
+msgid "Submit and deactivate"
+msgstr ""
+
+#: templates/display_login_form.php:15
+#, php-format
+msgid ""
+"An error has occurred. Sorry for the inconvenience. Please contact us at %s "
+"to find out the problem. Thanks for understanding us."
+msgstr ""
+
+#: templates/display_login_form.php:25 templates/display_login_form.php:50
+msgid "Log In"
+msgstr ""
+
+#: templates/display_login_form.php:26
+msgid "Invalid username or password."
+msgstr ""
+
+#: templates/display_login_form.php:27
+msgid "Please fill required fields."
+msgstr ""
+
+#: templates/display_login_form.php:28
+msgid "Please activate your account."
+msgstr ""
+
+#: templates/display_login_form.php:30
+msgid "User identification..."
+msgstr ""
+
+#: templates/display_login_form.php:34
+msgid ""
+"Please log in to your Web-Dorado account to manage your free and paid Web-"
+"Dorado plugins, themes and add-ons."
+msgstr ""
+
+#: templates/display_login_form.php:38
+msgid "Username"
+msgstr ""
+
+#: templates/display_login_form.php:41
+msgid "Forgot Your Username?"
+msgstr ""
+
+#: templates/display_login_form.php:45
+msgid "Password"
+msgstr ""
+
+#: templates/display_login_form.php:48
+msgid "Forgot Password?"
+msgstr ""
+
+#: templates/display_login_form.php:51
+msgid "Create an account"
+msgstr ""
+
+#: templates/display_login_form.php:59
+msgid "Hi"
+msgstr ""
+
+#: templates/display_login_form.php:62
+msgid "Log Out"
+msgstr ""
+
+#: templates/display_login_form.php:63 wd.php:202
+msgid "Plugins"
+msgstr ""
+
+#: templates/display_login_form.php:68 wd.php:204
+msgid "Themes"
+msgstr ""
+
+#: templates/display_login_form.php:69 wd.php:206
+msgid "Add-ons"
+msgstr ""
+
+#: templates/display_login_form.php:71 wd.php:209
+msgid "Special Offers"
+msgstr ""
+
+#: templates/display_plugins.php:44
+msgid "Installed Plugins"
+msgstr ""
+
+#: templates/display_plugins.php:44
+msgid ""
+"These are paid and free Web-Dorado plugins you’ve installed on your "
+"WordPress website. Get main info, update, upgrade and manage your installed "
+"plugins with one click."
+msgstr ""
+
+#: templates/display_plugins.php:47
+msgid "Purchased Plugins"
+msgstr ""
+
+#: templates/display_plugins.php:47
+msgid ""
+"These are the paid plugins you’ve purchased. Install and activate the "
+"plugins to start using them on your WordPress website.  "
+msgstr ""
+
+#: templates/display_plugins.php:51
+msgid "Free Plugins"
+msgstr ""
+
+#: templates/display_plugins.php:51
+msgid ""
+"Choose from the wide variety of Web-Dorado free plugins available. Install "
+"and activate to use the plugins on your website."
+msgstr ""
+
+#: templates/display_plugins.php:200
+msgid "Plugin Add-ons"
+msgstr ""
+
+#: templates/display_plugins.php:293
+msgid "You don't have installed plugins yet"
+msgstr ""
+
+#: templates/display_plugins.php:360
+msgid "You don't have any purchased plugins to be installed."
+msgstr ""
+
+#: templates/display_plugins.php:378 templates/display_themes.php:333
+msgid "View Demo"
+msgstr ""
+
+#: templates/display_special_offers.php:26
+msgid "Available Coupons"
+msgstr ""
+
+#: templates/display_special_offers.php:29
+msgid "Product"
+msgstr ""
+
+#: templates/display_special_offers.php:30
+msgid "Discount"
+msgstr ""
+
+#: templates/display_special_offers.php:31
+msgid "Valid through"
+msgstr ""
+
+#: templates/display_special_offers.php:32
+msgid "Coupon code"
+msgstr ""
+
+#: templates/display_special_offers.php:46
+msgid "Copy"
+msgstr ""
+
+#: templates/display_themes.php:32
+msgid "Installed Themes"
+msgstr ""
+
+#: templates/display_themes.php:32
+msgid ""
+"Manage the themes you have installed on your WordPress website. Edit, "
+"update, delete, deactivate or activate them with one click."
+msgstr ""
+
+#: templates/display_themes.php:35
+msgid "Purchased Themes"
+msgstr ""
+
+#: templates/display_themes.php:35
+msgid ""
+"Below is the list of the paid themes available. Click on the install button "
+"and activate the themes to start using them."
+msgstr ""
+
+#: templates/display_themes.php:39
+msgid "Free Themes"
+msgstr ""
+
+#: templates/display_themes.php:39
+msgid ""
+"Here are free themes available for you to use. Click on the install button  "
+"to start using the themes you want on your WordPress website."
+msgstr ""
+
+#: templates/display_themes.php:263
+msgid "You don't have installed themes yet"
+msgstr ""
+
+#: templates/display_themes.php:319
+msgid "You don't have any purchased themes to be installed."
+msgstr ""
+
+#: wd.php:352
+msgid "What's new"
+msgstr ""
+
+#: wd.php:364
+msgid "There is a new"
+msgstr ""
+
+#: wd.php:364
+msgid "version"
+msgstr ""
+
+#: wd.php:366 wd.php:368
+msgid "Update now"
+msgstr ""
+
+#: wd.php:373
+msgid "More updates"
+msgstr ""
+
+#: wd.php:391
+msgid "New version of WD manager is available!"
+msgstr ""
+
+#: wd.php:398
+msgid "Please update now"
+msgstr ""
+
+#: wd.php:399
+msgid "Dismiss this notice."
+msgstr ""
+
+#: wd.php:411
+msgid ""
+"Sorry, something went wrong. We’re working on getting this fixed as soon as "
+"we can."
+msgstr ""
+
+#: wd.php:414
+msgid ""
+"Sorry, something went wrong. The resource you requested could not be found."
+msgstr ""
+
+#: wd.php:417
+msgid "Sorry, something went wrong."
+msgstr ""

@@ -1,0 +1,63 @@
+= 1.4.1 =
+Changed: Management of plugins by 10Web
+
+= 1.4.0 =
+Fixed: Issues with cron requests because of sessions. Sessions are not used anymore.
+
+= 1.3.9 =
+Fixed: cURL error 28
+
+= 1.3.8 =
+Fixed: Conflict with other plugins when FTP credentials are required
+
+= 1.3.7 =
+Changed: Deprecated updates from very old versions of Form Maker
+
+= 1.3.6 =
+Fixed: Conflict with some plugins
+
+= 1.3.5 =
+Changed: Performance improvement, less requests to API
+
+= 1.3.4 =
+Changed: Brand new Image Optimizer plugin added
+
+= 1.3.3 =
+Fixed: Plugins deleted when FTP is required but credentials are wrong
+Fixed: Settings saved in network-wide options, not per site (multisite)
+
+= 1.3.2 =
+Changed: Improved error handling of requests to API
+Fixed: JS error on IE11 on plugin activation
+Fixed: Do not show demo link if does not exist
+Fixed: Theme updates on multisite
+Fixed: Minor bugs with FTP
+Fixed: Print notices on multisite
+
+= 1.3.1 =
+Fixed: enqueue admin scripts and styles only on the plugin's pages
+
+= 1.3.0 =
+New: Install, delete and update of plugins when FTP credentials are required
+New: Confirmation when deleting plugin or theme
+New: Managing Contact Form Maker plugin
+New: URL for debugging
+Fixed: Installing free version of plugin from iframe popup
+Fixed: Notices if user has no product purchased
+Fixed: JS error on login page when using IE11
+Fixed: Expire date when there is a subscription and expired single purchase
+Fixed: Multiple calls to API if there are unseen notices
+Fixed: Redirect to not allowed page after network activate
+Changed: Show error notices if can't connect to API for some reason
+Changed: Popup to purchase all themes and all addons bundles
+Changed: Improved UX when installing, updating and activating products
+Changed: Description of coupons from support team
+Changed: Plugins are not activated network-wide anymore
+
+= 1.2.0 =
+New: Plugin actions using AJAX
+Fixed: Fatal error if plugin folder has been renamed
+Fixed: Available updates were not shown when there is no deactivated plugin or theme
+Fixed: Compatibility with PHP <= 5.4
+Changed: WD Manager self update from static URL
+Changed: Other minor improvements

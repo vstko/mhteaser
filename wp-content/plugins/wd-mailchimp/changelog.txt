@@ -1,0 +1,61 @@
+MailChimp WD
+5.0.19
+* Deleted: Unnecessary code.
+* Changed: Notification "Leave A Review?".
+
+5.0.18
+* Added: Gutenberg integration.
+* Fixed: Conflict with free Web-Dorado plugins during deactivation.
+* Fixed: Conflict with PHP 7.2 version.
+
+5.0.17
+* Fixed: Conflict with Form Maker PayPal functionality.
+
+5.0.16
+* Changed: Deactivation popup
+
+5.0.15
+* Fixed: Style conflict with another plugin.
+
+5.0.14
+* Fixed: Shortcode pop-up style.
+
+5.0.13
+* Fixed: Scrollbox display type form minimization bug
+
+5.0.12
+* Added: Plugin overview
+
+5.0.11
+* Fixed: Bug with checkbox, radio fields label position in deafult theme
+
+5.0.10
+* Fixed: Use default if theme doesn't exist
+
+5.0.9
+* Fixed: Conflict with Yoast SEO plugin
+
+5.0.8
+* Fixed: Bug with email field js validation 
+
+5.0.7
+* Fixed: Bug with pagination
+
+5.0.6
+* Fixed: Minor bug on submissions
+
+5.0.5
+* Fixed: Bug with MailChimp list export
+
+5.0.4
+* Fixed: Bug with bage break field 
+* Fixed: Bug with arithmetic captcha field
+
+5.0.3
+* Fixed: Subscribed members count
+
+5.0.2
+* Changed: Responsive Design
+
+5.0.1
+* Added: New Themes

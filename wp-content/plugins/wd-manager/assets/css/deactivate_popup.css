@@ -1,0 +1,45 @@
+.wd-opacity{
+	position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    background: #000;
+    opacity: 0.5;
+	display: none;
+}
+
+.wd-deactivate-popup{
+	position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    z-index: 999999;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+	display: none;
+	box-sizing: border-box;
+}
+.wd-deactivate-popup-header{
+	border-bottom: 1px solid #ccc;
+    padding: 18px 40px;
+    font-size: 16px;
+    background: rgba(221, 221, 221, 0.14);	
+}
+.wd-deactivate-popup-body{
+	padding: 20px 40px;
+	border-bottom: 1px solid #ccc;	
+}
+.wd-btns{
+	padding: 20px 40px;
+	text-align: right;
+	
+}
+
+.additional_details_wrap{
+	margin-top: 20px;
+}
