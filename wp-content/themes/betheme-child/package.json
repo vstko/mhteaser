@@ -6,7 +6,7 @@
   "scripts": {
     "css": "node-sass --output-style compressed --source-comments --include-path scss scss/main.scss style.css",
     "autoprefixer": "postcss -r style.css",
-    "js": "uglifyjs js/*.js --compress --mangle > app.min.js",
+    "js": "uglifyjs js/**/*.js --compress --mangle > app.min.js",
     "watch": "nodemon --ignore app.min.js -e scss,js -x \"npm run css && npm run autoprefixer & npm run js\""
   },
   "author": "FM_RL and Betheme",
