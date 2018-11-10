@@ -22,9 +22,10 @@ $mq_breakpoint_theme--3: 	768px;
 $mq_breakpoint_theme--4: 	414px;
 $mq_breakpoint_theme--5: 	320px;
 
+$placeholderColor: black;
 
-
-/* Media Query Mixins */
+/* Mixins */
+	/* Media Query Mixins */
 @mixin mediaQueryMin($minw) {
 	@media (min-width: $minw) {
 		@content
@@ -42,6 +43,7 @@ $mq_breakpoint_theme--5: 	320px;
 		@content
 	}
 };
+
 
 
 
@@ -77,6 +79,9 @@ header{display: none;}
 	p {
 		font-size: 16px;
 		margin-bottom: 0;
+		@include mediaQueryMax($mq_breakpoint_theme--5) {
+			font-size: 12px;
+		}
 	}
 
 	img{
@@ -159,7 +164,12 @@ header{display: none;}
 			min-width: 380px;
 			text-align: right;
 			margin-bottom: 0 !important;
+			
+			@include mediaQueryMin(1441px){
+				width: 450px;
+			}
 
+			
 			@include mediaQueryMax(1441px){
 				margin-right: 0;
 			}
@@ -179,7 +189,7 @@ header{display: none;}
 			}
 
 			@include mediaQueryMax(320px){
-				font-size: 15px;
+				font-size: 11px;
 			}
 		}
 	}
@@ -254,6 +264,10 @@ header{display: none;}
 		img {
 			max-width: 324px;
 			height: auto;
+			
+			@include mediaQueryMax(375px) {
+				max-width: 200px !important;
+			}
 		}
 
 		.header_description p {
@@ -291,6 +305,128 @@ header{display: none;}
 						font-size: 11px;
 						height: 22px;
 					}
+				}
+			}
+		}
+	}
+}
+
+/* Form Styles */
+#mwd-form1 {
+	position: relative;
+	
+	.wdform_section {
+		
+		/* Targets submit btn div and centers with flex, when single col in responsive */
+		.ui-sortable-handle:nth-of-type(5) {
+			@extend .flex_center;
+		}
+		
+		/* Removes Name Tags */
+		.wdform-label-section {
+			display: none;
+		}
+		
+		/* Actual Form Fields */
+		.wdform-element-section {
+			input {
+				background-color: #fcfcfc;
+				border: none;
+				border-bottom: 1px solid black;
+			}
+			
+			/* Override Inline Styles */
+			input[style] {
+				width: 300px !important;
+				box-shadow: none;
+				
+				@include mediaQueryMin(1280px) {
+					width: 400px !important;
+				}
+		
+				@include mediaQueryMax(1024px) {
+					width: 300px !important;
+				}
+				
+				@include mediaQueryMax(320px) {
+					width: 245px !important;
+				}
+			}
+			
+			select {
+				background-color: #fcfcfc;
+				border: none;
+				border-bottom: 1px solid black;
+			}
+			
+			/* override inline styles */
+			select[style] {
+				width: 278px !important;
+				box-shadow: none;
+				
+				@include mediaQueryMin(1280px) {
+					width: 378px !important;
+				}
+		
+				@include mediaQueryMax(1024px) {
+					width: 278px !important;
+				}
+				
+				@include mediaQueryMax(320px) {
+					width: 223px !important;
+				}
+			}
+			
+			/* Only way i managed to change color of INPUT empty value*/
+			#wdform_1_element1[value], /* email */
+			#wdform_3_element1[value], /* first name */
+			#wdform_4_element1[value], /* last name */
+			#wdform_5_element1[value], /* zip */
+			#wdform_6_element1[value], /* phone */
+			{ color: black !important; }
+			
+			/* Same issue, this time for drop downs*/
+			#wdform_11_element1, /* broker */
+			#wdform_12_element1, /* price range */
+			#wdform_13_element1, /* hear about us */
+			{ color: black; }
+			
+			.button-submit {
+				width: 134px;
+	  		height: 43px;
+				line-height: 1;
+				margin: 0;
+				background-color: transparent;
+				font-size: 15px;
+				border: 1px solid black;
+				border-radius: 0;
+				color: black;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				position: absolute;
+				bottom:0;
+				left: 42%;
+				
+				
+				@include mediaQueryMax(3000px) {
+					left: 45.5%;
+				}
+		
+				@include mediaQueryMax(1280px) {
+					left: 45.3%;
+				}
+		
+				@include mediaQueryMax(1024px) {
+					left: 44%;
+				}
+				
+				@include mediaQueryMax($mq_breakpoint_theme--3) {
+					left: 42%;
+				}
+		
+				@include mediaQueryMax($mq_breakpoint_theme--4) {
+					position: static;
+					margin: 0 auto;
 				}
 			}
 		}
