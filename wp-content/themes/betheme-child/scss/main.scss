@@ -5,7 +5,7 @@ Author: 		Muffin group
 Author URI: 	http://muffingroup.com
 Description:	Child Theme for Betheme - Premium WordPress Theme
 Template:		betheme
-Version: 		1.6.1.1
+Version: 		1.6.1.2
 */
 
 /* Media Query Vars */
@@ -16,7 +16,7 @@ $mq_breakpoint--lg: 		1025px;
 $mq_breakpoint--xl: 		1367px;
 
 /* theme break points */
-$mq_breakpoint_theme--1: 	1240px;  
+$mq_breakpoint_theme--1: 	1240px;
 $mq_breakpoint_theme--2: 	960px;
 $mq_breakpoint_theme--3: 	768px;
 $mq_breakpoint_theme--4: 	414px;
@@ -66,19 +66,19 @@ header{display: none;}
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
+
 	@include mediaQueryMin(415px){
 		.section_wrapper {
 			min-width: 350px;
 			height: auto;
 		}
 	}
-	
+
 	p {
 		font-size: 16px;
 		margin-bottom: 0;
 	}
-	
+
 	img{
 		/* Logo */
 		max-height: 500px !important;
@@ -104,42 +104,42 @@ header{display: none;}
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
-		grid-template-rows: 480px 200px 600px;
+		grid-template-rows: 480px 200px 350px;
 		grid-template-areas:
-			"img1 img2"
-    	"text text"
-    	"img3 .";
-			
+						"img1 img2"
+						"text text"
+						"img3 .";
+
 		@include mediaQueryMax(1280px){
-			grid-template-rows: 427px 200px 600px;
+			grid-template-rows: 427px 200px 350px;
 		}
-		
+
 		@include mediaQueryMax(1024px) {
-			grid-template-rows: 341px 200px 400px;
+			grid-template-rows: 341px 200px 300px;
 			grid-template-areas:
-				"img1 img2"
-    		"text ."
-    		"img3 .";
+							"img1 img2"
+							"text ."
+							"img3 .";
 		}
-			
+
 		@include mediaQueryMax($mq_breakpoint_theme--3){
 			margin: 0 10px !important;
 			box-sizing: border-box;
 			grid-template-columns: calc(100% - 20px);
-			grid-template-rows: 500px 200px 675px 200px 383px 200px;
+			grid-template-rows: 500px 200px 675px 200px 215px 200px;
 			grid-template-areas:
-				"img1" 
-				"text"
-				"img2" 
-				"."
-				"img3" 
-				".";
+							"img1"
+							"text"
+							"img2"
+							"."
+							"img3"
+							".";
 		}
-		
+
 		@include mediaQueryMax($mq_breakpoint_theme--4){
 			grid-template-rows: 263px 170px 533px 170px 238px 50px;
 		}
-		
+
 		@include mediaQueryMax($mq_breakpoint_theme--5){
 			grid-template-rows: 200px 120px 450px 120px 201px 50px;
 		}
@@ -150,38 +150,34 @@ header{display: none;}
 .land__s2__grid__wrap--txt {
 	grid-area: text;
 	@extend .flex_center;
-	
+
 	div {
 		margin: 0 !important;
-		
+
 		p {
 			font-size: 19px;
 			min-width: 380px;
 			text-align: right;
 			margin-bottom: 0 !important;
-			
-			@include mediaQueryMax(3360px){
-				margin-right: -15vw;
-			}
-			
+
 			@include mediaQueryMax(1441px){
 				margin-right: 0;
 			}
-			
+
 			@include mediaQueryMax(1280px){
-				margin-right: 100px;	
+				margin-right: 100px;
 			}
-			
+
 			@include mediaQueryMax(1024px){
 				margin-right: -190px;
-				
+
 			}
-			
+
 			@include mediaQueryMax($mq_breakpoint_theme--3){
 				text-align: center;
 				margin-right: 0px;
 			}
-			
+
 			@include mediaQueryMax(320px){
 				font-size: 15px;
 			}
@@ -194,26 +190,7 @@ header{display: none;}
 	max-height: 469px;
 	width: auto !important;
 	grid-area: img1;
-	
-	.wp-image-22 {
-		width: auto;
-		height: 100%;
-		position: absolute;
-		top:0;
-		left: 0;
-		z-index: 0;
-	}
-	
-	.wp-image-21 {
-		/* blur */
-		width: auto;
-		height: 100%;
-		position: absolute;
-		top:0;
-		left:0;
-		z-index: -1;
-	}
-	
+
 }
 
 .land__s2__grid__wrap--img--2 {
@@ -223,35 +200,13 @@ header{display: none;}
 	grid-area: img2;
 	align-self: flex-end;
 	justify-self: flex-end;
-	
+	margin-top: 55px;
+
 	@include mediaQueryMax($mq_breakpoint_theme--3){
 		align-self: center;
 		justify-self: center;
+		margin-top: 0;
 	}
-	
-	.wp-image-24 {
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top:0;
-		right: 0;
-		z-index: 0;
-		margin-top: 55px;
-		@include mediaQueryMax($mq_breakpoint_theme--3){ margin-top: 0 !important;}
-	}
-	
-	.wp-image-23 {
-		/* blur */
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top:0;
-		right:0;
-		z-index: -1;
-		margin-top: 55px;
-		@include mediaQueryMax($mq_breakpoint_theme--3){ margin-top: 0 !important;}
-	}
-	
 }
 
 .land__s2__grid__wrap--img--3 {
@@ -259,44 +214,31 @@ header{display: none;}
 	max-width: 800px;
 	height: auto;
 	grid-area: img3;
-	
+	margin-left: 177px;
+
 	@include mediaQueryMax(1440px) {
 		height: 429px;
 	}
-	
+
 	@include mediaQueryMax(1024px) {
 		height: 344px;
+		margin-left: 0;
 	}
-	
+
 	@include mediaQueryMax($mq_breakpoint_theme--4){
 		height: 239px;
 	}
-	
+
 	@include mediaQueryMax($mq_breakpoint_theme--5){
 		height: 201px;
 	}
-	
-	.wp-image-26 {
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top:0;
-		right: 0;
-		z-index: 0;
-		margin-left: 177px !important;
-	}
-	
-	.wp-image-25 {
-		/* blur */
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top:0;
-		right:0;
-		z-index: -1;
-		margin-left: 177px !important;
-	}
-	
+}
+
+.blur_img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1;
 }
 
 
@@ -304,42 +246,40 @@ header{display: none;}
 /* Section 3 */
 .landing_section3_form {
 	width: 100%;
-	
+
 	.form_header{
 		@extend .flex_center;
 		padding-top: 100px;
-		
+
 		img {
 			max-width: 324px;
 			height: auto;
 		}
-		
+
 		.header_description p {
 			font-size: 19px;
 			width: 300px;
 			margin: 0;
 		}
 	}
-	
+
 	.form_wrapper {
 		width:100%;
-		height: 500px;
-		background-color: darkolivegreen;
 	}
-	
+
 	.form_footer_wrapper{
 		margin-top: 25px;
-	
+
 		.mcb-wrap-inner {
 			display: flex;
-			
+
 			.form_footer_a h6 {
 				color: #9b9b9b;
 				@include mediaQueryMax(415px){
 					font-size: 11px;
 				}
 			}
-		
+
 			.form_footer_b {
 				color: #9b9b9b;
 				display: flex;
