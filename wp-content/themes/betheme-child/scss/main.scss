@@ -382,13 +382,13 @@ header{display: none;}
 			#wdform_3_element1[value], /* first name */
 			#wdform_4_element1[value], /* last name */
 			#wdform_5_element1[value], /* zip */
-			#wdform_6_element1[value], /* phone */
+			#wdform_6_element1[value] /* phone */
 			{ color: black !important; }
 			
 			/* Same issue, this time for drop downs*/
 			#wdform_11_element1, /* broker */
 			#wdform_12_element1, /* price range */
-			#wdform_13_element1, /* hear about us */
+			#wdform_13_element1 /* hear about us */
 			{ color: black; }
 			
 			.button-submit {
