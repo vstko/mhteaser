@@ -228,6 +228,9 @@ header{display: none;}
 
 	@include mediaQueryMax(1440px) {
 		height: 429px;
+		img {
+			margin-left: 20px;
+		}
 	}
 
 	@include mediaQueryMax(1024px) {
@@ -237,6 +240,9 @@ header{display: none;}
 
 	@include mediaQueryMax($mq_breakpoint_theme--4){
 		height: 239px;
+		img {
+			margin-left: 0;
+		}
 	}
 
 	@include mediaQueryMax($mq_breakpoint_theme--5){
@@ -370,6 +376,10 @@ header{display: none;}
 		
 				@include mediaQueryMax(1024px) {
 					width: 278px !important;
+				}
+				
+				@include mediaQueryMax(414px) {
+					width: 251px !important;
 				}
 				
 				@include mediaQueryMax(320px) {
