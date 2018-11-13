@@ -120,11 +120,15 @@ header{display: none;}
 		}
 
 		@include mediaQueryMax(1024px) {
-			grid-template-rows: 341px 200px 300px;
+			grid-template-columns: calc(100% - 20px);
+			grid-template-rows: 500px 200px 675px 200px 215px 200px;
 			grid-template-areas:
-							"img1 img2"
-							"text ."
-							"img3 .";
+							"img1"
+							"text"
+							"img2"
+							"."
+							"img3"
+							".";
 		}
 
 		@include mediaQueryMax($mq_breakpoint_theme--3){
@@ -178,11 +182,6 @@ header{display: none;}
 				margin-right: 100px;
 			}
 
-			@include mediaQueryMax(1024px){
-				margin-right: -190px;
-
-			}
-
 			@include mediaQueryMax($mq_breakpoint_theme--3){
 				text-align: center;
 				margin-right: 0px;
@@ -200,6 +199,12 @@ header{display: none;}
 	max-height: 469px;
 	width: auto !important;
 	grid-area: img1;
+	
+	@include mediaQueryMax(1024px){
+		align-self: center;
+		justify-self: center;
+		margin-top: 0;
+	}
 
 }
 
@@ -212,7 +217,7 @@ header{display: none;}
 	justify-self: flex-end;
 	margin-top: 55px;
 
-	@include mediaQueryMax($mq_breakpoint_theme--3){
+	@include mediaQueryMax(1024px){
 		align-self: center;
 		justify-self: center;
 		margin-top: 0;
@@ -238,6 +243,18 @@ header{display: none;}
 		margin-left: 0;
 	}
 
+	@include mediaQueryMax(1024px){
+		align-self: center;
+		justify-self: center;
+		margin-top: 0;
+		
+		img {
+			margin: 0;
+			width: 100%;
+			height: auto;
+		}
+	}
+
 	@include mediaQueryMax($mq_breakpoint_theme--4){
 		height: 239px;
 		img {
@@ -255,6 +272,20 @@ header{display: none;}
 	left: 0;
 	top: 0;
 	opacity: 1;
+	
+	@include mediaQueryMax(320px){
+		font-size: 11px;
+	}
+	
+	@include mediaQueryMin(1280px) {
+		p {
+			img:hover{
+				-webkit-transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  			transition:         all 3s cubic-bezier(0.075, 0.82, 0.165, 1); 
+				opacity: 0;
+			}
+		}	
+	}
 }
 
 
@@ -320,6 +351,14 @@ header{display: none;}
 /* Form Styles */
 #mwd-form1 {
 	position: relative;
+	
+		@include mediaQueryMax(768px) {
+			.wdform_section {
+				.wdform_column:nth-of-type(2){
+					padding-left: 0;
+				}
+			}
+		}
 	
 	.wdform_section {
 		
