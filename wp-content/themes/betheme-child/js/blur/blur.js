@@ -8,7 +8,7 @@
             window.addEventListener('scroll', function() {
                 var screenHeight = window.innerHeight;
                 var screenWidth = window.innerWidth;
-                if(screenWidth < 769){
+                if(screenWidth < 1025){
                     imgs.forEach(function(el) {
                         var percentage;
                         var opacityVal;
