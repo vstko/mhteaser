@@ -12,14 +12,14 @@ Version: 		1.6.1.2
 
 /* Regular */
 @font-face {
-  font-family: MaisonNeue;
+  font-family: MaisonNeue-Book;
   src: url('assets/fonts/MaisonNeue-Book.woff2') format('woff2'), /* Super Modern Browsers */
   url('assets/fonts/MaisonNeue-Book.woff') format('woff'), /* Pretty Modern Browsers */
   url('assets/fonts/MaisonNeue-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 /* Italic */
 @font-face {
-  font-family: MaisonNeue;
+  font-family: MaisonNeue-Book-I;
   src: url('assets/fonts/MaisonNeue-BookItalic.woff2') format('woff2'),
   url('assets/fonts/MaisonNeue-BookItalic.woff') format('woff'),
   url('assets/fonts/MaisonNeue-BookItalic.ttf')  format('truetype');
@@ -27,7 +27,7 @@ Version: 		1.6.1.2
 }
 /* Italic Bold */
 @font-face {
-  font-family: MaisonNeue;
+  font-family: MaisonNeue-Bold-I;
   src: url('assets/fonts/MaisonNeue-BoldItalic.woff2') format('woff2'),
   url('assets/fonts/MaisonNeue-BoldItalic.woff') format('woff'),
   url('assets/fonts/MaisonNeue-BoldItalic.ttf')  format('truetype');
@@ -36,7 +36,7 @@ Version: 		1.6.1.2
 }
 /* Bold */
 @font-face {
-  font-family: MaisonNeue;
+  font-family: MaisonNeue-Bold;
   src: url('assets/fonts/MaisonNeue-Bold.woff2') format('woff2'),
   url('assets/fonts/MaisonNeue-Bold.woff') format('woff'),
   url('assets/fonts/MaisonNeue-Bold.ttf')  format('truetype');
@@ -90,7 +90,9 @@ $placeholderColor: black;
 	align-items: center;
 }
 
-
+body, span {
+	font-family: MaisonNeue-Book;
+}
 
 /*--------------------------------- Landing ---*/
 
@@ -378,6 +380,10 @@ header{display: none;}
 					@include mediaQueryMax(415px){
 						font-size: 11px;
 						height: 22px;
+						a {
+							text-decoration: none !important;
+							color: #9b9b9b !important;
+						}
 					}
 				}
 			}
