@@ -1,4 +1,5 @@
 (function () {
+    "use strict";
     var blur = {
         cssClasses: {
             imgBlurred: ".blur_img"
@@ -9,10 +10,7 @@
                 imgs.forEach(function(el) {
                     var percentage;
                     var opacityVal;
-                    var pxMid = (el.getBoundingClientRect().top - (el.clientHeight/2));
-                    if(el.clientHeight > 600){
-                        pxMid += 250
-                    }
+                    var pxMid = el.getBoundingClientRect().top + (el.clientHeight/2) - (screenHeight/2);
                     percentage = ((( screenHeight - pxMid ) / screenHeight) * 100)/2 ;
                     opacityVal = pxMid / 200;
                     if(percentage < 38) {
