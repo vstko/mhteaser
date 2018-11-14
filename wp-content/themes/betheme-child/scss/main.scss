@@ -377,13 +377,16 @@ header{display: none;}
 
 				p{
 					border-bottom: 1px solid #9b9b9b;
+					
+					a {
+						text-decoration: none !important;
+						color: #9b9b9b !important;
+					}
+					
 					@include mediaQueryMax(415px){
 						font-size: 11px;
 						height: 22px;
-						a {
-							text-decoration: none !important;
-							color: #9b9b9b !important;
-						}
+					
 					}
 				}
 			}
@@ -524,3 +527,36 @@ header{display: none;}
 		}
 	}
 }
+
+#eModal-1{
+	position: fixed;
+	top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%);
+	width: 86%;
+	height: 86%;
+	overflow: hidden;
+	padding: 50px 0 0 0 !important;
+	
+/*
+	@include mediaQueryMax(320px) {
+		padding: 10px !important;
+	}
+*/
+	
+	p b {
+		font-family: MaisonNeue-Bold;
+		color: black;
+	}
+	
+	.emodal-content {
+		margin: 10px;
+		overflow:auto;
+		height: 70%;
+		padding: 40px;
+		
+		
+	
+	}
+}
+
