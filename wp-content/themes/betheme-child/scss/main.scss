@@ -80,7 +80,27 @@ $placeholderColor: black;
 	}
 };
 
+/* Animations */
+.arrow_anim {
+	animation: arrow-anim 1s infinite;
+	animation-delay: 200ms;
+}
 
+@keyframes arrow-anim {
+  0% {
+    transform: translateY(0);
+		opacity: 1;
+  }
+
+  95% {
+		opacity: 0.01;
+  }
+	
+	100% {
+		opacity: 0;
+		transform: translateY(25px);
+  }
+}
 
 
 /* Class Extends */
@@ -133,6 +153,19 @@ header{display: none;}
 
 .landing_logo_mh_wrapper {
 	width: 100%;
+}
+
+.landing_arrow {
+	
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	
+	img {
+		width: 40px;
+	}
 }
 
 
@@ -198,6 +231,10 @@ header{display: none;}
 .land__s2__grid__wrap--txt {
 	grid-area: text;
 	@extend .flex_center;
+	
+	.one-second.column {
+		width: 100% !important;
+	}
 
 	div {
 		margin: 0 !important;
@@ -211,23 +248,27 @@ header{display: none;}
 			@include mediaQueryMin(1441px){
 				width: 450px;
 			}
-
 			
 			@include mediaQueryMax(1441px){
 				margin-right: 0;
 			}
-
+			
 			@include mediaQueryMax(1280px){
-				margin-right: 100px;
+				margin-right: 200px;
 			}
-
-			@include mediaQueryMax($mq_breakpoint_theme--3){
+			
+			@include mediaQueryMax(1024px){
+				margin-right: 0px;
+				font-size: 24px;
+			}
+			
+			@include mediaQueryMax($mq_breakpoint_theme--2){
 				text-align: center;
 				margin-right: 0px;
 			}
-
-			@include mediaQueryMax(320px){
-				font-size: 11px;
+			
+			@include mediaQueryMax($mq_breakpoint_theme--4){
+				font-size: 95%;
 			}
 		}
 	}
@@ -400,6 +441,10 @@ header{display: none;}
 			}
 		}
 	}
+}
+
+.landing_section3_form[style] {
+	height: 100% !important;
 }
 
 /* Form Styles */

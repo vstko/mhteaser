@@ -307,6 +307,9 @@
 	color:#e74c3c;
 	border:none;
 }
+.mwd-popover-container:before  { 
+	position:absolute;
+}
 #mwd-form1 .wdform-required {
 	color: #ff1313;
 }
