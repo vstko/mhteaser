@@ -1,3 +1,5 @@
+
+if (window.innerWidth > 1023) {
 (function ($) {
     "use strict";
     var scrollifyOptions = {
@@ -21,3 +23,6 @@
     }
     $.scrollify(scrollifyOptions)
 })(jQuery);
+}
+
+console.log(window.innerWidth);
