@@ -134,6 +134,10 @@ header{display: none;}
 		}
 	}
 
+	.valign-top{
+		float: none !important;
+	}
+
 	p {
 		font-size: 16px;
 		margin-bottom: 0;
@@ -180,7 +184,7 @@ header{display: none;}
 		height: 100%;
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: 1fr auto;
 		grid-template-rows: 480px 200px 350px;
 		grid-template-areas:
 						"img1 img2"
@@ -393,6 +397,10 @@ header{display: none;}
 			@include mediaQueryMax(375px) {
 				max-width: 200px !important;
 			}
+		}
+
+		.sec3_wordmark_logo{
+			float: none !important;
 		}
 
 		.header_description p {
