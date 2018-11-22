@@ -8,16 +8,16 @@
         scrollSpeed: 1100,
         offset : 0,
         scrollbars: true,
+        updateHash: false,
         standardScrollElements: "",
         setHeights: true,
         overflowScroll: true,
-        updateHash: true,
         touchScroll:true,
         before: function (index, sections) {},
         after: function () { },
         afterResize: function () { },
         afterRender: function () { },
         offsets: function () { }
-    }
+    };
     $.scrollify(scrollifyOptions)
 })(jQuery);

@@ -361,10 +361,6 @@ header{display: none;}
 		}
 	}
 
-	.form_wrapper {
-		width:100%;
-	}
-
 	.form_footer_wrapper{
 		margin-top: 25px;
 
@@ -403,138 +399,73 @@ header{display: none;}
 }
 
 /* Form Styles */
-#mwd-form1 {
-	position: relative;
-	
-		@include mediaQueryMax(768px) {
-			.wdform_section {
-				.wdform_column:nth-of-type(2){
-					padding-left: 0;
-				}
+
+.form_wrapper {
+
+	.form_wrapper_container{
+		max-width:880px;
+		margin: 0 auto;
+		position: relative;
+		float: none;
+	}
+	.form-grid {
+		display: flex;
+		flex-wrap: wrap;
+
+		.form-grid__item{
+			width: 100%;
+			padding: 15px 20px;
+			box-sizing: border-box;
+
+			@include mediaQueryMin($mq_breakpoint_theme--3){
+				width: percentage(1/2);
 			}
-		}
-	
-	.wdform_section {
-		
-		/* Targets submit btn div and centers with flex, when single col in responsive */
-		.ui-sortable-handle:nth-of-type(5) {
-			@extend .flex_center;
-		}
-		
-		/* Removes Name Tags */
-		.wdform-label-section {
-			display: none;
-		}
-		
-		/* Actual Form Fields */
-		.wdform-element-section {
-			input {
-				background-color: #fcfcfc;
-				border: none;
-				border-bottom: 1px solid black;
-			}
-			
-			/* Override Inline Styles */
-			input[style] {
-				width: 300px !important;
-				box-shadow: none;
-				
-				@include mediaQueryMin(1280px) {
-					width: 400px !important;
-				}
-		
-				@include mediaQueryMax(1024px) {
-					width: 300px !important;
-				}
-				
-				@include mediaQueryMax(320px) {
-					width: 245px !important;
-				}
-			}
-			
-			select {
-				background-color: #fcfcfc;
-				border: none;
-				border-bottom: 1px solid black;
-			}
-			
-			/* override inline styles */
-			select[style] {
-				width: 278px !important;
-				box-shadow: none;
-				
-				@include mediaQueryMin(1280px) {
-					width: 378px !important;
-				}
-		
-				@include mediaQueryMax(1024px) {
-					width: 278px !important;
-				}
-				
-				@include mediaQueryMax(414px) {
-					width: 251px !important;
-				}
-				
-				@include mediaQueryMax(320px) {
-					width: 223px !important;
-				}
-			}
-			
-			/* Only way i managed to change color of INPUT empty value*/
-			#wdform_1_element1[value], /* email */
-			#wdform_3_element1[value], /* first name */
-			#wdform_4_element1[value], /* last name */
-			#wdform_5_element1[value], /* zip */
-			#wdform_6_element1[value] /* phone */
-			{ color: black !important; }
-			
-			/* Same issue, this time for drop downs*/
-			#wdform_11_element1, /* broker */
-			#wdform_12_element1, /* price range */
-			#wdform_13_element1 /* hear about us */
-			{ color: black; }
-			
-			.button-submit {
-				width: 134px;
-	  		height: 43px;
-				line-height: 1;
-				margin: 0;
-				background-color: transparent;
-				font-size: 15px;
-				border: 1px solid black;
-				border-radius: 0;
-				color: black;
-				text-transform: uppercase;
-				letter-spacing: 2px;
-				position: absolute;
-				bottom:0;
-				left: 42%;
-				
-				
-				@include mediaQueryMax(3000px) {
-					left: 45.5%;
-				}
-		
-				@include mediaQueryMax(1280px) {
-					left: 45.3%;
-				}
-		
-				@include mediaQueryMax(1024px) {
-					left: 44%;
-				}
-				
-				@include mediaQueryMax($mq_breakpoint_theme--3) {
-					left: 42%;
-				}
-		
-				@include mediaQueryMax($mq_breakpoint_theme--4) {
-					position: static;
-					margin: 0 auto;
+
+			.mc-field-group{
+				margin-bottom: 25px;
+
+				input,
+				select{
+					width: 100%;
+					color: black !important;
+					background-color: #fcfcfc;
+					border: none;
+					border-bottom: 1px solid black;
+					box-shadow: none;
+
+					&::placeholder {
+						color: black;
+						opacity: 1;
+					}
 				}
 			}
 		}
 	}
+
+	.form-response {
+		text-align: center;
+		font-weight: bold;
+		max-width: 555px;
+		margin: 0 auto;
+	}
+
+	.button-submit {
+		margin: 0 auto;
+		display: block;
+		min-width: 134px;
+		height: 43px;
+		line-height: 1;
+		background-color: transparent;
+		font-size: 15px;
+		border: 1px solid black;
+		border-radius: 0;
+		color: black;
+		text-transform: uppercase;
+	}
 }
+
+
+
 
 #eModal-1{
 	position: fixed;
