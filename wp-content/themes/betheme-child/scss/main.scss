@@ -192,7 +192,7 @@ header{display: none;}
 						"img3 .";
 
 		@include mediaQueryMax(1280px){
-			grid-template-rows: 427px 200px 350px;
+			grid-template-rows: 500px 200px 350px;
 		}
 
 		@include mediaQueryMax(1024px) {

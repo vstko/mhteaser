@@ -1,5 +1,5 @@
 
-if (window.innerWidth > 1023) {
+if (window.innerWidth > 1024) {
 (function ($) {
     "use strict";
     var scrollifyOptions = {
