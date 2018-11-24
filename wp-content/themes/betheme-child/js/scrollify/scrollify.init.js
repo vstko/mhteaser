@@ -1,3 +1,5 @@
+
+if (window.innerWidth > 1024) {
 (function ($) {
     "use strict";
     var scrollifyOptions = {
@@ -10,7 +12,7 @@
         scrollbars: true,
         updateHash: false,
         standardScrollElements: "",
-        setHeights: true,
+        setHeights: false,
         overflowScroll: true,
         touchScroll:true,
         before: function (index, sections) {},
@@ -21,3 +23,6 @@
     };
     $.scrollify(scrollifyOptions)
 })(jQuery);
+}
+
+console.log(window.innerWidth);

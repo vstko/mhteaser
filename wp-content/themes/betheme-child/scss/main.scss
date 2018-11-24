@@ -80,7 +80,27 @@ $placeholderColor: black;
 	}
 };
 
+/* Animations */
+.arrow_anim {
+	animation: arrow-anim 1s infinite;
+	animation-delay: 200ms;
+}
 
+@keyframes arrow-anim {
+  0% {
+    transform: translateY(0);
+		opacity: 1;
+  }
+
+  95% {
+		opacity: 0.01;
+  }
+	
+	100% {
+		opacity: 0;
+		transform: translateY(25px);
+  }
+}
 
 
 /* Class Extends */
@@ -114,10 +134,15 @@ header{display: none;}
 		}
 	}
 
+	.valign-top{
+		float: none !important;
+	}
+
 	p {
 		font-size: 16px;
 		margin-bottom: 0;
-        font-family: MaisonNeue !important;
+    font-family: MaisonNeue !important;
+		
 		@include mediaQueryMax($mq_breakpoint_theme--5) {
 			font-size: 12px;
 		}
@@ -125,14 +150,26 @@ header{display: none;}
 
 	img{
 		/* Logo */
-		max-height: 500px !important;
-		height: 100%;
-		width: auto;
+		height: auto;
+		width: 420px;
 	}
 }
 
 .landing_logo_mh_wrapper {
 	width: 100%;
+}
+
+.landing_arrow {
+	
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	
+	img {
+		width: 20px;
+	}
 }
 
 
@@ -147,7 +184,7 @@ header{display: none;}
 		height: 100%;
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: 1fr auto;
 		grid-template-rows: 480px 200px 350px;
 		grid-template-areas:
 						"img1 img2"
@@ -155,7 +192,7 @@ header{display: none;}
 						"img3 .";
 
 		@include mediaQueryMax(1280px){
-			grid-template-rows: 427px 200px 350px;
+			grid-template-rows: 500px 200px 350px;
 		}
 
 		@include mediaQueryMax(1024px) {
@@ -198,6 +235,10 @@ header{display: none;}
 .land__s2__grid__wrap--txt {
 	grid-area: text;
 	@extend .flex_center;
+	
+	.one-second.column {
+		width: 100% !important;
+	}
 
 	div {
 		margin: 0 !important;
@@ -211,23 +252,27 @@ header{display: none;}
 			@include mediaQueryMin(1441px){
 				width: 450px;
 			}
-
 			
 			@include mediaQueryMax(1441px){
 				margin-right: 0;
 			}
-
+			
 			@include mediaQueryMax(1280px){
-				margin-right: 100px;
+				margin-right: 200px;
 			}
-
-			@include mediaQueryMax($mq_breakpoint_theme--3){
+			
+			@include mediaQueryMax(1024px){
+				margin-right: 0px;
+				font-size: 24px;
+			}
+			
+			@include mediaQueryMax($mq_breakpoint_theme--2){
 				text-align: center;
 				margin-right: 0px;
 			}
-
-			@include mediaQueryMax(320px){
-				font-size: 11px;
+			
+			@include mediaQueryMax($mq_breakpoint_theme--4){
+				font-size: 95%;
 			}
 		}
 	}
@@ -349,15 +394,36 @@ header{display: none;}
 			max-width: 324px;
 			height: auto;
 			
+			@include mediaQueryMax(414px) {
+				max-width: 200px !important;
+			}
+			
 			@include mediaQueryMax(375px) {
 				max-width: 200px !important;
 			}
 		}
 
-		.header_description p {
-			font-size: 19px;
-			width: 300px;
-			margin: 0;
+		.sec3_wordmark_logo{
+			float: none !important;
+		}
+
+		.header_description {
+			p {
+				font-size: 19px;
+				width: 300px;
+				margin: 0;
+				letter-spacing: 2px;
+				margin-bottom: 5px;
+				
+				@include mediaQueryMax(320px) {
+					font-size: 16px !important;
+				}
+			}
+			
+			p:nth-of-type(1), p:nth-of-type(2) {
+				color: black;
+			}
+			
 		}
 	}
 
@@ -396,6 +462,10 @@ header{display: none;}
 			}
 		}
 	}
+}
+
+.landing_section3_form[style] {
+	height: 100% !important;
 }
 
 /* Form Styles */
@@ -477,12 +547,6 @@ header{display: none;}
 	overflow: hidden;
 	padding: 50px 0 0 0 !important;
 	
-/*
-	@include mediaQueryMax(320px) {
-		padding: 10px !important;
-	}
-*/
-	
 	p b {
 		font-family: MaisonNeue-Bold;
 		color: black;
@@ -493,9 +557,12 @@ header{display: none;}
 		overflow:auto;
 		height: 70%;
 		padding: 40px;
-		
-		
-	
 	}
 }
 
+.new_legal_text {
+	font-size:10px;
+	text-align: justify; 
+	text-align-last: center;
+	color: #9B9B9B
+}
