@@ -1,5 +1,3 @@
-
-if (window.innerWidth > 1024) {
 (function ($) {
     "use strict";
     var scrollifyOptions = {
@@ -17,12 +15,13 @@ if (window.innerWidth > 1024) {
         touchScroll:true,
         before: function (index, sections) {},
         after: function () { },
-        afterResize: function () { },
+        afterResize: function () {
+            window.innerWidth < 1024 ? $.scrollify.disable() : $.scrollify.enable()
+        },
         afterRender: function () { },
         offsets: function () { }
     };
-    $.scrollify(scrollifyOptions)
+    if (window.innerWidth > 1024) {
+        $.scrollify(scrollifyOptions);
+    }
 })(jQuery);
-}
-
-console.log(window.innerWidth);
