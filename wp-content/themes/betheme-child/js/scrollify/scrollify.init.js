@@ -1,8 +1,8 @@
-
-if (window.innerWidth > 1024) {
 (function ($) {
     "use strict";
-    var scrollifyOptions = {
+    var timeout,
+        delay = 250,
+        scrollifyOptions = {
         section : ".s-scrollify",
         sectionName : "section-name",
         interstitialSection : "",
@@ -17,12 +17,25 @@ if (window.innerWidth > 1024) {
         touchScroll:true,
         before: function (index, sections) {},
         after: function () { },
-        afterResize: function () { },
+        afterResize: function () {
+            window.innerWidth < 1024 ? $.scrollify.disable() : $.scrollify.enable()
+        },
         afterRender: function () { },
         offsets: function () { }
     };
-    $.scrollify(scrollifyOptions)
-})(jQuery);
-}
 
-console.log(window.innerWidth);
+    if (window.innerWidth > 1024) {
+        $.scrollify(scrollifyOptions);
+    }
+
+    $(window).on('resize', function() {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function() {
+            if (window.innerWidth > 1025){
+            $.scrollify(scrollifyOptions);
+            }
+        }, delay);
+
+    });
+})(jQuery);
