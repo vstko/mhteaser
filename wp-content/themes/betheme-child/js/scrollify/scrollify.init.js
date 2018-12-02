@@ -1,6 +1,8 @@
 (function ($) {
     "use strict";
-    var scrollifyOptions = {
+    var timeout,
+        delay = 250,
+        scrollifyOptions = {
         section : ".s-scrollify",
         sectionName : "section-name",
         interstitialSection : "",
@@ -21,7 +23,19 @@
         afterRender: function () { },
         offsets: function () { }
     };
+
     if (window.innerWidth > 1024) {
         $.scrollify(scrollifyOptions);
     }
+
+    $(window).on('resize', function() {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function() {
+            if (window.innerWidth > 1025){
+            $.scrollify(scrollifyOptions);
+            }
+        }, delay);
+
+    });
 })(jQuery);

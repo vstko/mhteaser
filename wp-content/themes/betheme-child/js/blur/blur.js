@@ -1,10 +1,13 @@
 (function () {
     "use strict";
-    var images = document.querySelectorAll(".blur_img");
-    var blur = {
+    var images = document.querySelectorAll(".blur_img"),
+        timeout,
+        delay = 250,
+        blur = {
         config: {
             breakpoint: 1025
         },
+
         blurImg: function (imgs) {
             var screenHeight = window.innerHeight;
                 imgs.forEach(function(el) {
@@ -22,8 +25,9 @@
                         el.style.opacity =  -opacityVal;
                     }
                 });
-            },
-       init: function (images) {
+       },
+
+       init: function(images) {
             if(window.innerWidth < this.config.breakpoint) {
                 if(images.length > 0){
                     this.blurImg(images);
@@ -32,17 +36,18 @@
         }
     };
 
-    window.addEventListener('scroll', function scrolling() {
+    function initBlur() {
         blur.init(images);
-        window.onresize = function() {
-            if(window.innerWidth > 1024) {
-                window.removeEventListener('scroll', scrolling);
-                for(var i = 0; i < images.length; i++){
-                    images[i].style.opacity =  1;
-                }
-            }else {
-                window.addEventListener('scroll', scrolling);
-            }
-        }
+    }
+
+    function toggleBlur() {
+        window.innerWidth > 1024 ? window.removeEventListener('scroll', initBlur) : window.addEventListener('scroll', initBlur)
+    }
+
+    window.addEventListener('scroll', initBlur);
+
+    window.addEventListener('resize', function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(toggleBlur, delay);
     });
 })();
