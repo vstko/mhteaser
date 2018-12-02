@@ -11,11 +11,13 @@
         blurImg: function (imgs) {
             var screenHeight = window.innerHeight;
                 imgs.forEach(function(el) {
-                    var percentage;
-                    var opacityVal;
-                    var pxMid = el.getBoundingClientRect().top + (el.clientHeight/2) - (screenHeight/2);
+                    var percentage,
+                        opacityVal,
+                        pxMid = el.getBoundingClientRect().top + (el.clientHeight/2) - (screenHeight/2);
+
                     percentage = ((( screenHeight - pxMid ) / screenHeight) * 100)/2;
                     opacityVal = pxMid / 200;
+
                     if(percentage < 38) {
                         el.style.opacity =  1;
                     }
