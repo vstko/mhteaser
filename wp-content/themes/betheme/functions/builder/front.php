@@ -396,6 +396,7 @@ if( ! function_exists( 'mfn_builder_print' ) )
 									// Items --------------------------------------------
 
 										if( is_array( $wrap['items'] ) ){
+
 											foreach( $wrap['items'] as $item ){
 
 												if( function_exists( 'mfn_print_'. $item['type'] ) ){
