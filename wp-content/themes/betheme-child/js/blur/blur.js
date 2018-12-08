@@ -1,3 +1,4 @@
+/*
 (function () {
     "use strict";
     var images = document.querySelectorAll(".blur_img"),
@@ -53,3 +54,4 @@
         timeout = setTimeout(toggleBlur, delay);
     });
 })();
+*/
