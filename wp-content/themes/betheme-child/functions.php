@@ -65,7 +65,7 @@ function createProspect($data) {
 
     /** @var WP_REST_Request $data */
     $prospectObj = new Prospect();
-    $dataToAddProspect = $prospectObj->getDataToAddProspect($data->get_json_params());
+    $dataToAddProspect = $prospectObj->getDataToAddProspect($data->get_body_params());
     $utils = new Utils();
     $options = get_option('plugin_options');
     $baseUrl = $options['sequen_api_base_url'];
