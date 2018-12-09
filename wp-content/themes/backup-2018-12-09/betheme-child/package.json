@@ -1,0 +1,22 @@
+{
+  "name": "FM-RL-MH-betheme-child",
+  "version": "1.0.0",
+  "description": "compiling, minifiying task for dev",
+  "main": "app.min.js",
+  "scripts": {
+    "css": "node-sass --output-style compressed --source-comments --include-path scss scss/main.scss style.css",
+    "autoprefixer": "postcss -r style.css",
+    "js": "uglifyjs js/**/*.js --compress --mangle > app.min.js",
+    "watch": "nodemon --ignore app.min.js -e scss,js -x \"npm run css && npm run autoprefixer & npm run js\""
+  },
+  "author": "FM_RL and Betheme",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "npm": "^6.4.1",
+    "postcss-cli": "^6.0.0",
+    "uglify-js": "^3.3.16"
+  }
+}
