@@ -587,7 +587,6 @@ class Prospect
     public function translateValuesFromMailchimpForm($mailchimpData)
     {
         $sequentEquivalentArr = [];
-
         foreach ($mailchimpData as $key => $val) {
             $sequentKeyExists = array_key_exists($key, self::SEQUENT_MAILCHIMP_PROPERTY_MAPPINGS);
             if($sequentKeyExists !== false){
