@@ -52,3 +52,38 @@ function my_js() {
 		wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/app.min.js', array( 'jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_js' );
+
+
+/* ----------------------------------------------------------------------------
+ * Register new api endpoint for sequent
+ ------------------------------------------------------------------------------ */
+
+require_once(__DIR__.'/sequent/Prospect.php'); // imports Prospect class
+require_once(__DIR__.'/sequent/Utils.php'); // imports Utils class
+
+function createProspect($data) {
+
+    /** @var WP_REST_Request $data */
+    $prospectObj = new Prospect();
+    $dataToAddProspect = $prospectObj->getDataToAddProspect($data->get_json_params());
+    $utils = new Utils();
+    $options = get_option('plugin_options');
+    $baseUrl = $options['sequen_api_base_url'];
+    $apiKey = $options['x_api_key'];
+    $sequentKey = $options['x_sequent_key'];
+
+    $sequentRes = $utils::addProspect($dataToAddProspect,$baseUrl, $apiKey, $sequentKey);
+
+    $response = new WP_REST_Response(json_decode($sequentRes, true));
+
+    return $response;
+}
+
+require_once(TEMPLATEPATH . '-child/functions/admin-menu.php');
+
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'betheme-child/v1', '/sequent/addprospect', array(
+        'methods' => 'POST',
+        'callback' => 'createProspect',
+    ) );
+} );
