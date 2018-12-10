@@ -49,7 +49,7 @@ function mfnch_textdomain() {
 /*-- Load JS --*/
 function my_js() {
         wp_enqueue_script( 'jquery.scrollify', get_stylesheet_directory_uri() . '/vendors/scrollify/jquery.scrollify.js', array( 'jquery'), '', true );
-		wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/app.min.js', array( 'jquery'), '', true );
+        wp_enqueue_script( 'app.min', get_stylesheet_directory_uri() . '/app.min.js', array( 'jquery'), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_js' );
 
@@ -73,7 +73,6 @@ function createProspect($data) {
     $sequentKey = $options['x_sequent_key'];
 
     $sequentRes = $utils::addProspect($dataToAddProspect,$baseUrl, $apiKey, $sequentKey);
-
     $response = new WP_REST_Response(json_decode($sequentRes, true));
 
     return $response;

@@ -596,7 +596,6 @@ class Prospect
                 }
             }
         }
-
         return $sequentEquivalentArr;
     }
 
